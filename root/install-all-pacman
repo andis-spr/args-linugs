@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+# run as root
+set -e
+pacman -S --needed - < ../packages-list-pacman

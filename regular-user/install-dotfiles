@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+# run as regular user
+set -e
+mkdir $HOME/.dotfiles-git
+git clone --separate-git-dir=$HOME/.dotfiles-git git@github.com:andis-spr/dotfiles-vm-00.git $HOME/tmpdotfiles
+rsync --recursive --verbose --exclude '.git' $HOME/tmpdotfiles/ $HOME/
+rm -r $HOME/tmpdotfiles
+source $HOME/.zshrc
+dot-git config --local status.showUntrackedFiles no

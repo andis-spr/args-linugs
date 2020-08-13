@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+# run as regular user
+set -e
+mkdir /tmp/cascadia-code
+cd /tmp/cascadia-code
+wget https://github.com/microsoft/cascadia-code/releases/download/v2007.01/CascadiaCode-2007.01.zip
+unzip -v CascadiaCode-2007.01.zip
+mkdir -p $HOME/.fonts/cascadia-code-2007.01/otf
+cp -rv /tmp/cascadia-code/otf/* $HOME/.fonts/cascadia-code-2007.01/otf
+cdr
+rm -rf /tmp/cascadia-code
