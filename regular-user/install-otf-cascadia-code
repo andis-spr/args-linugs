@@ -7,5 +7,5 @@ wget https://github.com/microsoft/cascadia-code/releases/download/v2008.25/Casca
 unzip /tmp/cascadia-code/CascadiaCode-2008.25.zip -d /tmp/cascadia-code/unzip
 mkdir -p $HOME/.fonts/CascadiaCode-2008.25/otf/*
 cp -rv /tmp/cascadia-code/unzip/otf/* $HOME/.fonts/CascadiaCode-2008.25/otf/
-cd ~
+cd $HOME
 rm -rf /tmp/cascadia-code

@@ -4,5 +4,4 @@ set -e
 git clone https://github.com/LukeSmithxyz/st.git /tmp/st
 cd /tmp/st
 make install
-cdr
 rm -rf /tmp/st
