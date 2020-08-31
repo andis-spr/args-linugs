@@ -10,6 +10,7 @@ debtap
 dmenu
 epiphany
 findutils
+dos2unix
 fzf
 gawk
 gcc
