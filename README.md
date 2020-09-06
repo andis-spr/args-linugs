@@ -1,1 +1,1 @@
-Scripts for setting up a Linux graphical session quicker.
+Personal scripts for setting up a Linux graphical session quicker.
