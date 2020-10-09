@@ -1,1 +1,1 @@
-Personal user program configuration files for a Linux GUI session.
+Personal scripts for setting up a Linux GUI session quicker
