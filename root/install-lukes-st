@@ -3,5 +3,6 @@
 set -e
 git clone https://github.com/LukeSmithxyz/st.git /tmp/st
 cd /tmp/st
+git checkout 73c034ba05101e2fc337183af1cdec5bfe318b99
 make install
 rm -rf /tmp/st
