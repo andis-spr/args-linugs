@@ -4,6 +4,7 @@ automake
 autossh
 base
 base-devel
+bat
 binutils
 dconf-editor
 dmenu
@@ -50,6 +51,7 @@ sxiv
 systemd
 texinfo
 translate-shell
+tree
 ttf-dejavu
 ttf-joypixels
 ttf-symbola

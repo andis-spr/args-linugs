@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 # run as root
 set -e
-git clone https://github.com/LukeSmithxyz/st.git /tmp/st
+git clone https://github.com/andis-sprinkis/st.git /tmp/st
 cd /tmp/st
 git checkout 73c034ba05101e2fc337183af1cdec5bfe318b99
 make install
