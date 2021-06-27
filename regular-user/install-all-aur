@@ -1,4 +1,0 @@
-#!/usr/bin/env sh
-# run as regular user
-set -e
-yay -S --needed < ../packages-list-aur

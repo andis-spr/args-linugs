@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+set -e
+
+temp_path=/tmp/$(basename $@)$(date +%s)
+git clone https://github.com/andis-sprinkis/st.git $temp_path
+cd $temp_path
+git checkout 73c034ba05101e2fc337183af1cdec5bfe318b99
+sudo make install

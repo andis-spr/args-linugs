@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+set -e
+
+temp_path=/tmp/$(basename $@)$(date +%s)
+git clone https://aur.archlinux.org/yay.git $temp_path
+cd $temp_path
+makepkg -si
+rm -rf $temp_path

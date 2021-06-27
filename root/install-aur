@@ -1,8 +1,0 @@
-#!/usr/bin/env sh
-# run as root
-set -e
-git clone https://aur.archlinux.org/yay.git /tmp/yay
-cd /tmp/yay
-makepkg -si
-cd $HOME
-rm -rf /tmp/yay

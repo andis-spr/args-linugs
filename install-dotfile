@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+set -e
+
+temp_path=/tmp/$(basename $@)$(date +%s)
+[ ! -d $HOME/.dotfiles-git ] && mkdir -p $HOME/.dotfiles-fit
+git clone --separate-git-dir=$HOME/.dotfiles-git git@github.com:andis-sprinkis/linux-user-config.git $temp_path
+rsync --recursive --verbose --exclude '.git' $temp_path $HOME/
+source $HOME/.zshrc
+dot-git config --local status.showUntrackedFiles no
+
+[ ! -d $HOME/.config ] && mkdir -p $HOME/.config
+git clone git@github.com:andis-sprinkis/neovim-user-config.git $HOME/.config/nvim
