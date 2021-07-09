@@ -2,4 +2,4 @@
 
 set -e
 
-sudo pacman -S --needed - < ../list-pkg-pacman
+sudo pacman -S --needed - < ./list-pkg-pacman

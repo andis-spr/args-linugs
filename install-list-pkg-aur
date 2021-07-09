@@ -2,4 +2,4 @@
 
 set -e
 
-yay -S --needed < ../list-pkg-aur
+yay -S --needed < ./list-pkg-aur
